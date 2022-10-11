@@ -92,9 +92,7 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin<Tab1> {
             ),
           ),
           GestureDetector(
-            onTap: (){
-
-            },
+            onTap: () {},
             child: Container(
               width: displayWidth(context),
               decoration: BoxDecoration(
@@ -110,23 +108,12 @@ class _Tab1State extends State<Tab1> with AutomaticKeepAliveClientMixin<Tab1> {
               ),
               padding: EdgeInsets.all(displayWidth(context) * 0.05),
               margin: EdgeInsets.all(displayWidth(context) * 0.05),
-              child: Row(
-                children: [
-                  Hero(
-                    tag: "DemoTag",
-                    child: Icon(
-                      Icons.add,
-                      size: 70.0,
-                    ),
-                  ),
-                  Text(
-                    "Pen",
-                    textAlign: TextAlign.center,
-                    style: new TextStyle(
-                      color: Colors.black,
-                    ),
-                  ),
-                ],
+              child: Text(
+                "Pen",
+                textAlign: TextAlign.center,
+                style: new TextStyle(
+                  color: Colors.black,
+                ),
               ),
             ),
           ),
